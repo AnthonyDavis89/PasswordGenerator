@@ -13,16 +13,22 @@ function writePassword() {
 }
 
 function generatePassword() {
-  //Chose Length
   var lengthOfPassword = prompt(
     "Please choose a length of at least 8 characters and no more than 128 characters"
   );
 
-  //Alerts
-  var resultSpecial = confirm("Click ok to confirm using special characters");
-  var resultNumeric = confirm("Click ok to confirm using numeric characters");
-  var resultLower = confirm("Click ok to confirm using lowercase characters");
-  var resultUpper = confirm("Click ok to confirm using uppercase characters");
+  if (lengthOfPassword >= 8 && lengthOfPassword <= 128) {
+    //Alerts
+    var resultSpecial = confirm("Click ok to confirm using special characters");
+    var resultNumeric = confirm("Click ok to confirm using numeric characters");
+    var resultLower = confirm("Click ok to confirm using lowercase characters");
+    var resultUpper = confirm("Click ok to confirm using uppercase characters");
+  } else {
+    alert(
+      "Password length must be a length of at least 8 characters and no more than 128 characters"
+    );
+    return "";
+  }
 
   if (resultSpecial || resultNumeric || resultLower || resultUpper) {
     console.log("Pass");
