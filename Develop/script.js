@@ -31,9 +31,9 @@ function generatePassword() {
   }
 
   if (resultSpecial || resultNumeric || resultLower || resultUpper) {
-    console.log("Pass");
   } else {
     alert("Must have at least 1 special condition");
+    return "";
   }
 
   var creatingPassword = [];
