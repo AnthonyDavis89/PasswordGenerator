@@ -12,6 +12,8 @@ function writePassword() {
   passwordText.value = password;
 }
 
+// Generate Password Function
+
 function generatePassword() {
   var lengthOfPassword = prompt(
     "Please choose a length of at least 8 characters and no more than 128 characters"
