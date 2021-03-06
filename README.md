@@ -46,4 +46,4 @@ THEN the password is either displayed in an alert or written to the page
 
 Final result of webpage:
 
-![Final result of webpage](/Users/Anthonydavis/gt-bootcamp/homework/week-03/Assets/PasswordGenerator.png)
+![Final result of webpage](./Assets/PasswordGenerator.png)
