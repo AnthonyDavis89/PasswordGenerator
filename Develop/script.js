@@ -95,6 +95,7 @@ function generatePassword() {
     creatingPassword.push(holdNumber);
   }
 
+  // Scramble password
   creatingPassword.sort(function (a, b) {
     return 0.5 - Math.random();
   });
